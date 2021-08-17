@@ -32,17 +32,11 @@ article {
     margin-left: auto;
     margin-right: auto;
     background: var(--very-pale-blue);
-    /* padding-bottom: 2rem; */
 }
-article::before {
-    content: "";
+.img-hero {
+    width: 100%;
     display: block;
-    background-image: url("./../images/illustration-hero.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 150px;
-}
+}   
 h2 {
     text-align: center;
     font-weight: 900;
@@ -114,11 +108,7 @@ button {
 @media screen and (min-width: 768px) {
     article {
         width: 50%;
-    }
-    article::before {
-        height: 175px;
-    }
-    
+    }    
 }
 @media screen and (min-width: 1024px) {
     body {
@@ -130,9 +120,6 @@ button {
     }
     article {
         width: 30%;
-    }
-    article::before {
-        height: 210px;
     }    
     button {
         cursor: pointer;
